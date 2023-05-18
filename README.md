@@ -32,3 +32,20 @@ Used for uploading notes for leetcode questions
 
 
 # Two pointers
+
+## 1. Valid palindrome
+- declare 2 pointers, one on first letter the other on last
+- while left <= right, check if both letters match, else return false
+
+## 2. Two sum (Sorted)
+- declare 2 pointers, one on first num, the other on last number
+- compute sum, if sum is smaller, move left pointer to right, else move right pointer to left
+- if i > j, return false, else return [i,j]
+
+## 3. Three Sum
+- Start by sorting the num list O(nlogn)
+- iterate through the list, for each iteration check if current is same as previous, if its the same , use continue to go to next number in list,
+- declare left and right pointer, left pointing at current index + 1, right pointing at last number
+- perform two sum , check if current + left + right is = 0
+- if < 0, move left ptr to right, else if > 0, move right ptr to left, else = 0 move letf ptr to right, append to result and check while left < right and if nums[left] == nums[left + 1], move left ptr to right again
+
