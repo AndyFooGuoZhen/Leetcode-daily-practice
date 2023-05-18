@@ -21,4 +21,9 @@ Used for uploading notes for leetcode questions
 - for each string, iterate through each character and use ord() to get ascii value of character, essentially we are coutning the number of a specific character for each string
 - convert the list into tuple form at the end, and add it to hashmap via append ( hashMap[tuple(count)].append(current string) ) 
 
-
+# 5. Top k frequent elements
+- Use bucket sort, index represent count of the element
+- create a hashmap, and a list containing len(nums) + 1 empty lists ( list index at 3 means count of element = 3)
+- iterate through number array and keep update count of elements in hashmap
+- iterate through hashmap and append elements according to count into the empty lists
+- iterate list from reverse and append elements from sublist into result list until length of k is reached
