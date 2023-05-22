@@ -49,3 +49,21 @@ Used for uploading notes for leetcode questions
 - perform two sum , check if current + left + right is = 0
 - if < 0, move left ptr to right, else if > 0, move right ptr to left, else = 0 move letf ptr to right, append to result and check while left < right and if nums[left] == nums[left + 1], move left ptr to right again
 
+# Sliding windows
+
+## 1. Best time to buy stock
+- Define a min and profit variable
+- Iterate through the list, is the current is less than min, set that as new min
+- Then calculate current - min and compare it to previous assigned profit, if new profit is larger, reassign profit
+
+## 2. Longest substring without repeating characters
+- Define a set and left ptr
+- Traverse the string by each character, if character not in set, calculate length by taking right ptr - left ptr + 1
+- if character in set, remove start removing characters from left prt until character no longer in set
+
+## 3. Longest repeating character with replacemebt
+- Define a countHashmap, left ptr and length
+- Traverse the string by each character, for each character, increment its count using hashmap
+- then in a while loop, check if current window size - max count of a charcater in hashmap > k
+- if so, decrement count of character at left ptr in hashmap and move leftptr to the right
+- calculate length of window and compare it to previous recorded max window length
