@@ -61,9 +61,24 @@ Used for uploading notes for leetcode questions
 - Traverse the string by each character, if character not in set, calculate length by taking right ptr - left ptr + 1
 - if character in set, remove start removing characters from left prt until character no longer in set
 
-## 3. Longest repeating character with replacemebt
+## 3. Longest repeating character with replacement
 - Define a countHashmap, left ptr and length
 - Traverse the string by each character, for each character, increment its count using hashmap
 - then in a while loop, check if current window size - max count of a charcater in hashmap > k
 - if so, decrement count of character at left ptr in hashmap and move leftptr to the right
 - calculate length of window and compare it to previous recorded max window length
+
+# Stacks
+
+## 1. Min stack
+- In constructor, define list acting as a stack and a second list to keep track of min after each push is done
+- When pushing new element to stack, check if element to be pushed is the min, if so , append that into min stack list
+- When popping, pop element from list and min list
+- When getting min of stack, return [-1] of min stack
+
+## 2. Generate parenthesis ( Given number n, the number of parenthesis, compute all possible well formed parenthesis
+- Case 1: if openParenthesis == close == n, append it to result
+- Case 2: if open parenthesis is < n, append it to current parenthesis string and recursively call method again, make sure to pop ( after calling method before going to second if case)
+- Case 3; if close < open parenthesis, append close parenthesis to parenthesis string and recursively call method again ( make sure to pop, ensure close parenthesis is consistent)
+- Tip , use "".join(list) to convert elements in list to one string before appending it to result list
+
