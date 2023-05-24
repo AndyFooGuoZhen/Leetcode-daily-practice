@@ -108,3 +108,13 @@ Used for uploading notes for leetcode questions
 - Calculate if bananas can be eaten in h hours by iterating through the piles and use math.ceil 
 <img width="400" alt="SCR-20230522-tynu" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f54a41e3-cac2-430f-9d0b-9cbf4769fe4e">
 
+## 2. Minimum in sorted rotated array
+- Suppose a sorted array would be : [1,2,3,4,5]
+- With rotation n = 1, array = [5,1,2,3,4]
+- With rotation n = 2, array = [4,5,1,2,3]
+- in while loop , compare min of prev min with nums[mid]
+- Use binary search with a tweak, if nums[mid] is > num[right], min is probably on the right, set low = mid + 1
+- Else , high = mid -1
+
+
+
