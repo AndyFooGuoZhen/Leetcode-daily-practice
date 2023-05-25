@@ -125,6 +125,14 @@ Used for uploading notes for leetcode questions
 - then curr.next points to prev, prev would then be pointing at curr and we move the curr pointer to the next by assigning it to temp variable
 - return prev at the end
 
+## 2. Merging two sorted linked list (Works like mergesort)
+- Suppose we are given two sorted linked list and we want to merge them
+- Define a list object (dummy = ListNode()), and assign a variable to the list object created (tail = dummy)
+- Case 1 : while list1 and list2 is not empty, compare the values of first element of both list, set tail.next = smaller value of the two list, move pointer of the seleted list using list1 = list1.next and move pointer of tail = tail.next
+- Case 2: if list1 not empty, append list1 to tail.next
+- Case 3: else if list2 not empty, append list2 to tail.next
+- return dummy.next
 
+## 3. Reorder list
 
 
