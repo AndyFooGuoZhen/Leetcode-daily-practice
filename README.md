@@ -116,5 +116,15 @@ Used for uploading notes for leetcode questions
 - Use binary search with a tweak, if nums[mid] is > num[right], min is probably on the right, set low = mid + 1
 - Else , high = mid -1
 
+# Linked List
+
+## 1. Reversing Linked list
+- Suppose we are given the head of the list
+- Define prev and curr variable where prev points to null and curr points to head
+- While curr is not null, record curr.next into temp variable
+- then curr.next points to prev, prev would then be pointing at curr and we move the curr pointer to the next by assigning it to temp variable
+- return prev at the end
+
+
 
 
