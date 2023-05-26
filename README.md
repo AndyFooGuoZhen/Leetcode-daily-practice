@@ -134,5 +134,15 @@ Used for uploading notes for leetcode questions
 - return dummy.next
 
 ## 3. Reorder list
+- Reorder the list such that the list would be of this order 
+<img width="466" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f5ee3d24-346e-455a-88d4-3cf872b222f0">
+- Intuition: Break linked list in half, reverse second half of linked list, begin merging both lists by alternating between the 2 halfs
+- Break problem into 2 portions : 1) find halfway point of the linkedlist 2) Begin merging process
+- 1) use fast and slow pointer to determine half of the linked list
+- 2) Reverse second half of list, same method as Q1 from linked list question above
+- 3) Merge both list via altering ( Use 2 temp variables to record next of head and next of reversed second list)
+
+<img width="495" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/258e7170-3ce2-4ac8-93cf-6e75676077e8">
+
 
 
