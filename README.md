@@ -168,7 +168,7 @@ Used for uploading notes for leetcode questions
 - Solution: Two pass solution using hashmap
 - Pass 1: Use hashmap to iterate through list, record key as original node and value as a copy
 - Pass 2: Iterate from head, set next of hashMap[oldCurr].next = hashMap[oldCurr.next], hashMap[oldCurr].random = hashMap[oldCurr.random]
--<img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f6bdde81-33e9-4cc4-8507-4e196e224174">
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f6bdde81-33e9-4cc4-8507-4e196e224174">
 
 ## 6. Adding two numbers
 - Suppose we have two linked list
