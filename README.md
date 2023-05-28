@@ -161,7 +161,7 @@ Used for uploading notes for leetcode questions
  - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/1b0d4089-ae22-4646-b7c3-56a4a6d08100">
  - O(n) time
 
-## Copying linked list with random poiters
+## 5. Copying linked list with random poiters
 - Supose we have a linked list , the only catch is that the nodes of the list has a random pointer to another node
 - Copying linked list is easy, but assigning random pointers to a node not created would be a problem
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/bb693366-1a8a-4e2f-96e7-acd2150fcb8d">
@@ -169,5 +169,17 @@ Used for uploading notes for leetcode questions
 - Pass 1: Use hashmap to iterate through list, record key as original node and value as a copy
 - Pass 2: Iterate from head, set next of hashMap[oldCurr].next = hashMap[oldCurr.next], hashMap[oldCurr].random = hashMap[oldCurr.random]
 -<img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f6bdde81-33e9-4cc4-8507-4e196e224174">
+
+## 6. Adding two numbers
+- Suppose we have two linked list
+- Normal sum example: 129 + 139 = 268
+- Linked list is reversed for better representation of problem : L1 = 9->2->1 , L2 = 9->3->1 , target solution = 8->6->2
+- Solution: traverse both lists, compute sum, if sum > 9: set carry = 1, for next sum add the carry
+- Solution would be similar to merging both linked list 
+- Case 1: Both L1 and L2 have elements
+- Edge Case 1 : L1 longer than L2
+- Edge Case 2 : L2 longer than L1
+- Edge Case 3 : Last addition includes a carry over, so an additional node needs to be added to the end 
+- O(len(l1) + len(l2)) time
 
 
