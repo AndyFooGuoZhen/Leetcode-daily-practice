@@ -115,6 +115,7 @@ Used for uploading notes for leetcode questions
 - in while loop , compare min of prev min with nums[mid]
 - Use binary search with a tweak, if nums[mid] is > num[right], min is probably on the right, set low = mid + 1
 - Else , high = mid -1
+- O(logn) time
 
 # Linked List
 
@@ -124,6 +125,7 @@ Used for uploading notes for leetcode questions
 - While curr is not null, record curr.next into temp variable
 - then curr.next points to prev, prev would then be pointing at curr and we move the curr pointer to the next by assigning it to temp variable
 - return prev at the end
+- O(n) time
 
 ## 2. Merging two sorted linked list (Works like mergesort)
 - Suppose we are given two sorted linked list and we want to merge them
@@ -132,6 +134,7 @@ Used for uploading notes for leetcode questions
 - Case 2: if list1 not empty, append list1 to tail.next
 - Case 3: else if list2 not empty, append list2 to tail.next
 - return dummy.next
+- O(len(list1) + len(list2))
 
 ## 3. Reorder list
 - Reorder the list such that the list would be of this order 
@@ -156,9 +159,15 @@ Used for uploading notes for leetcode questions
 - Once right pointer is null (end of list), set left.next = left.next.next
 - return dummy.next
  - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/1b0d4089-ae22-4646-b7c3-56a4a6d08100">
+ - O(n) time
 
 ## Copying linked list with random poiters
 - Supose we have a linked list , the only catch is that the nodes of the list has a random pointer to another node
 - Copying linked list is easy, but assigning random pointers to a node not created would be a problem
-- 
+- <img width="757" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/bb693366-1a8a-4e2f-96e7-acd2150fcb8d">
+- Solution: Two pass solution using hashmap
+- Pass 1: Use hashmap to iterate through list, record key as original node and value as a copy
+- Pass 2: Iterate from head, set next of hashMap[oldCurr].next = hashMap[oldCurr.next], hashMap[oldCurr].random = hashMap[oldCurr.random]
+-<img width="555" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f6bdde81-33e9-4cc4-8507-4e196e224174">
+
 
