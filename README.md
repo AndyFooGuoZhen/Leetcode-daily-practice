@@ -157,6 +157,8 @@ Used for uploading notes for leetcode questions
 - return dummy.next
  - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/1b0d4089-ae22-4646-b7c3-56a4a6d08100">
 
-
-
+## Copying linked list with random poiters
+- Supose we have a linked list , the only catch is that the nodes of the list has a random pointer to another node
+- Copying linked list is easy, but assigning random pointers to a node not created would be a problem
+- 
 
