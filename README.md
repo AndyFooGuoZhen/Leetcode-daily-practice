@@ -164,10 +164,10 @@ Used for uploading notes for leetcode questions
 ## Copying linked list with random poiters
 - Supose we have a linked list , the only catch is that the nodes of the list has a random pointer to another node
 - Copying linked list is easy, but assigning random pointers to a node not created would be a problem
-- <img width="757" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/bb693366-1a8a-4e2f-96e7-acd2150fcb8d">
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/bb693366-1a8a-4e2f-96e7-acd2150fcb8d">
 - Solution: Two pass solution using hashmap
 - Pass 1: Use hashmap to iterate through list, record key as original node and value as a copy
 - Pass 2: Iterate from head, set next of hashMap[oldCurr].next = hashMap[oldCurr.next], hashMap[oldCurr].random = hashMap[oldCurr.random]
--<img width="555" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f6bdde81-33e9-4cc4-8507-4e196e224174">
+-<img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f6bdde81-33e9-4cc4-8507-4e196e224174">
 
 
