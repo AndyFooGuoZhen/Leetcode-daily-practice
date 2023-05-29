@@ -182,4 +182,11 @@ Used for uploading notes for leetcode questions
 - Edge Case 3 : Last addition includes a carry over, so an additional node needs to be added to the end 
 - O(len(l1) + len(l2)) time
 
+## 7. Cycle in linked list
+- Suppose we have a linked list, we want to know if linked list contains cycle or not
+- Personal approach : Use hashmap, traverse the linkedlist, if node in hashmap , return true, else record key as node and value as index position, return false at the end
+- This approach takes O(n) time
+- Drawback: Space complexity is O(n)
+- Better solution: Floyd's tortoise and hare solution
+- 
 
