@@ -188,5 +188,11 @@ Used for uploading notes for leetcode questions
 - This approach takes O(n) time
 - Drawback: Space complexity is O(n)
 - Better solution: Floyd's tortoise and hare solution
-- 
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/a4748e6b-2814-4347-a5ce-a4b7beddd42e">
+- Using the image above, it is always true that the slow and fast pointer will meet if cycle exists
+- Suppose distance between fast and slow is 10, when slow moves , d = 10 + 1m = 11, when fast moves, d = 10 + 1 - 2 = 9
+- By extrapolating this result, d will decrease until d = 0
+- Slow pointer and fast pointer starts at the beginning, move slow pointer by 1 node at a time, fast pointer 2 nodes at a time
+- The slow and fast pointer will eventually meet if cycle exists
+
 
