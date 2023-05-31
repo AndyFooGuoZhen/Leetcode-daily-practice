@@ -196,3 +196,9 @@ Used for uploading notes for leetcode questions
 - The slow and fast pointer will eventually meet if cycle exists
 
 
+## 8. Duplicate number in linked list
+- Given an array of numbers with length n + 1 where intergers in the array are bounded by the range [1,n] (n is inclusive
+- Find the duplicate number, using constant space solution ( hashset, map cannot be used)
+- 
+
+
