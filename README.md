@@ -189,16 +189,22 @@ Used for uploading notes for leetcode questions
 - Drawback: Space complexity is O(n)
 - Better solution: Floyd's tortoise and hare solution
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/a4748e6b-2814-4347-a5ce-a4b7beddd42e">
+- slow and fast pointer works something like finding the half of the linked list
 - Using the image above, it is always true that the slow and fast pointer will meet if cycle exists
-- Suppose distance between fast and slow is 10, when slow moves , d = 10 + 1m = 11, when fast moves, d = 10 + 1 - 2 = 9
+- Suppose distance between fast and slow is 10, when slow moves , d = 10 + 1 = 11, when fast moves, d = 10 + 1 - 2 = 9
 - By extrapolating this result, d will decrease until d = 0
 - Slow pointer and fast pointer starts at the beginning, move slow pointer by 1 node at a time, fast pointer 2 nodes at a time
 - The slow and fast pointer will eventually meet if cycle exists
 
 
 ## 8. Duplicate number in linked list
-- Given an array of numbers with length n + 1 where intergers in the array are bounded by the range [1,n] (n is inclusive
+- Given an array of numbers with length n + 1 where intergers in the array are bounded by the range [1,n] (n is inclusive)
 - Find the duplicate number, using constant space solution ( hashset, map cannot be used)
+- Solution: Look at elements in array as pointers 
+- An array of [1,3,4,2,2] have linked list representation as 1->3->2->4->2 
+- Note that node 1 will not be in the cycle as element 0 does not exist (if elelement 0 exists, pointer 0 would point to 1)
+- Then perform Floyd's algorithm until slow and fast pointer meet
+- Then assign another pointer at head, shift both new pointer and slow pointer until they meet, that would be the start of the cycle ( duplicated number)
 - 
 
 
