@@ -205,6 +205,10 @@ Used for uploading notes for leetcode questions
 - Note that node 1 will not be in the cycle as element 0 does not exist (if elelement 0 exists, pointer 0 would point to 1)
 - Then perform Floyd's algorithm until slow and fast pointer meet
 - Then assign another pointer at head, shift both new pointer and slow pointer until they meet, that would be the start of the cycle ( duplicated number)
-- 
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/00369251-a1e2-47e3-9b8a-3131e5a616c0">
+- Since a cycle will always exist, while loop condition always True instead of using while fast or fast.next:
+
+
+
 
 
