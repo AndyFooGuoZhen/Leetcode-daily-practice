@@ -208,6 +208,16 @@ Used for uploading notes for leetcode questions
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/00369251-a1e2-47e3-9b8a-3131e5a616c0">
 - Since a cycle will always exist, while loop condition always True instead of using while fast or fast.next:
 
+# Trees
+## 1. Inverting Binary tree
+- Given a tree where each parent has 2 children , invert the tree
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/78583f91-a56e-4551-a478-3d8c661ac56a">
+- Intuition: Have a queue, visit the root, append root\/parent to queue, while queue still has element, pop from queue, swap the left and right element of the tree, append the left and right node of the tree and repeat
+- Drawback: Solution uses queue , more memory
+- Better solution : recursive solution via DFS
+- If root is empty, return none, else swap left and right node, and call self.invert(root.left) and self.invert(root.right) and return root
+
+
 
 
 
