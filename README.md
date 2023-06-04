@@ -224,6 +224,17 @@ Used for uploading notes for leetcode questions
 - Iterative BFS solution, traverse level by level, increment depth by 1 each time
 - Iterative DFS solution, using stacks
 
+## 3. Diameter of a Binary tree
+- Given a tree, find the longest diameter of the tree (max length of path from one node to other node)
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/438aeb72-8b2d-43df-9118-f0a8e2ea9fef">
+- Tree above has diameter of tree
+- Basics for tree : Height = starting from bottom , the node with the highest depth has height of 0 ; null nodes have height of -1
+- Solution intuition : Have a max variable, traverse tree from leaf nodes, height of the node = 1 + max(height(left), height(right)), update max if needed
+- Diameter = height(left) + height(right) + 2 , we need to add 2 as we the current node's height is one level above the left and right children 
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/6e217f84-6910-46ab-b2e8-c494b2449bb8">
+- Tip: Use global list so that dfs function can access it globally
+
+
 
 
 
