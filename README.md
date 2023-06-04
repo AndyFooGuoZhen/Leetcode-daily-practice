@@ -217,6 +217,14 @@ Used for uploading notes for leetcode questions
 - Better solution : recursive solution via DFS
 - If root is empty, return none, else swap left and right node, and call self.invert(root.left) and self.invert(root.right) and return root
 
+## 2. Max depth of tree
+- Given a tree, return the max depth of tree
+- Recursive DFS solution, if root is None, return 0
+- Else, self.maxDepth on root.left and root.right, compare and see which is bigger, then return 1 + max(depth(left) , depth(right))
+- Iterative BFS solution, traverse level by level, increment depth by 1 each time
+- Iterative DFS solution, using stacks
+
+
 
 
 
