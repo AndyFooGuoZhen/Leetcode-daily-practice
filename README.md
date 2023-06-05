@@ -233,7 +233,15 @@ Used for uploading notes for leetcode questions
 - Diameter = height(left) + height(right) + 2 , we need to add 2 as we the current node's height is one level above the left and right children 
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/6e217f84-6910-46ab-b2e8-c494b2449bb8">
 - Tip: Use global list so that dfs function can access it globally
+- O(n) time
 
+## 4. Balanced binary tree
+- Given a binary tree, return true if tree is height balanced
+- Height balanced definition: Given a node, compare heoght of left and right subtrees, if height difference > 1, its not height balanced (Do this for every node)
+- Solution intuition: Solution works similarly to diameter of binary tree, perform recursive dfs to get height of left and right, return false if diff > 1, return false if otherwise
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/68005da0-75d5-4e7a-8127-561a4ed670ae">
+- There might be otherways to return false once a false is detected, either via throwing exception or check for boolean type
+- O(n) time
 
 
 
