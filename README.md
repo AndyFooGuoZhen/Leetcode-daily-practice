@@ -254,7 +254,17 @@ Used for uploading notes for leetcode questions
 - Solution: If both roots are null, return True , else if both roots have same value and not null, perform checking for left subtree and right subtree for both roots, if both left and right returns true, they are the same
 - Perform checking via recursive solution
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/678b3684-46aa-4cf9-a282-389317c8927d">
-- O(n) time where n is number of nodes of the tree
+- - O(n) time where n is number of nodes of the tree
+
+
+## 6. isSubtree
+- Given root of 2 binary tree, return true if second tree is a subtree of the first tree
+- Solution: Case 1) Check if second root is null, if so, return true  
+- Case 2) If first is null and second is not null, return false
+- Case 3) if first and second root is not null, if they are the same tree (use same tee algorithm from above) , return true
+- Case 4) Check if second tree is subtree of root.left or secodn tree is subtree of root.right
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/537c55be-5d97-4bb3-b930-ee3b2bf08b4c">
+
 
 
 
