@@ -243,6 +243,14 @@ Used for uploading notes for leetcode questions
 - There might be otherways to return false once a false is detected, either via throwing exception or check for boolean type
 - O(n) time
 
+## 5. Same tree
+- Given the root of 2 binary tree, return true if both trees are the same
+- Solution: If both roots are null, return True , else if both roots have same value and not null, perform checking for left subtree and right subtree for both roots, if both left and right returns true, they are the same
+- Perform checking via recursive solution
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/678b3684-46aa-4cf9-a282-389317c8927d">
+- O(n) time where n is number of nodes of the tree
+
+
 
 
 
