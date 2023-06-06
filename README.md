@@ -27,6 +27,8 @@ Used for uploading notes for leetcode questions
 - for each string, iterate through each character and use ord() to get ascii value of character, essentially we are coutning the number of a specific character for each string
 - convert the list into tuple form at the end, and add it to hashmap via append ( hashMap[tuple(count)].append(current string) ) 
 - m be no of strings, n be longest length of a string, time = O(mn)
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f4861c88-393d-4c73-8387-b82ef6e73da3">
+
 
 ## 5. Top k frequent elements
 - Use bucket sort, index represent count of the element
@@ -57,6 +59,8 @@ Used for uploading notes for leetcode questions
 - perform two sum , check if current + left + right is = 0
 - if < 0, move left ptr to right, else if > 0, move right ptr to left, else = 0 move letf ptr to right, append to result and check while left < right and if nums[left] == nums[left + 1], move left ptr to right again
 - O(n^2) time
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/6bfba150-64ee-4319-acc6-de62b1458db6">
+
 
 # Sliding windows
 
@@ -69,7 +73,7 @@ Used for uploading notes for leetcode questions
 ## 2. Longest substring without repeating characters
 - Define a set and left ptr
 - Traverse the string by each character, if character not in set, calculate length by taking right ptr - left ptr + 1
-- if character in set, remove start removing characters from left prt until character no longer in set
+- if character in set, start removing characters from left ptr until character no longer in set
 - O(n) time
 
 ## 3. Longest repeating character with replacement
@@ -94,6 +98,8 @@ Used for uploading notes for leetcode questions
 - Case 2: if open parenthesis is < n, append it to current parenthesis string and recursively call method again, make sure to pop ( after calling method before going to second if case)
 - Case 3; if close < open parenthesis, append close parenthesis to parenthesis string and recursively call method again ( make sure to pop, ensure close parenthesis is consistent)
 - Tip , use "".join(list) to convert elements in list to one string before appending it to result list
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/d9350b87-1844-4ddf-b979-6ce6070bd852">
+
 
 # Binary search
 
