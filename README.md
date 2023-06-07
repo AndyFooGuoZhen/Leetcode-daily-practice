@@ -243,7 +243,7 @@ Used for uploading notes for leetcode questions
 
 ## 4. Balanced binary tree
 - Given a binary tree, return true if tree is height balanced
-- Height balanced definition: Given a node, compare heoght of left and right subtrees, if height difference > 1, its not height balanced (Do this for every node)
+- Height balanced definition: Given a node, compare height of left and right subtrees, if height difference > 1, its not height balanced (Do this for every node)
 - Solution intuition: Solution works similarly to diameter of binary tree, perform recursive dfs to get height of left and right, return false if diff > 1, return false if otherwise
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/68005da0-75d5-4e7a-8127-561a4ed670ae">
 - There might be otherways to return false once a false is detected, either via throwing exception or check for boolean type
