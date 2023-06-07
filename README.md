@@ -287,6 +287,11 @@ Used for uploading notes for leetcode questions
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/ba030921-916e-407a-8613-c734b0e0ffb8">
 - O(n) time
 
+## 9. Binary tree right side view
+- Solution similar to level order traversal
+- Just return last element of temp list before appending to result list
+- O(n) time
+
 
 
 
