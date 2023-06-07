@@ -266,6 +266,7 @@ Used for uploading notes for leetcode questions
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/537c55be-5d97-4bb3-b930-ee3b2bf08b4c">
 
 ## 7. Lowest common ancestor of a binary search tree
+- Binary search tree : Left nodes are smaller than parent node, right nodes larger
 - Given the root of a tree and two nodes p and q, find the lowest common ancestor of p and q
 - Facts : A node is an ancestor of itself
 - Fact2: Root of the tree is ancestor for all nodes in the tree
