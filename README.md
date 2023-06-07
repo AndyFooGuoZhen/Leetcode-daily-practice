@@ -278,6 +278,18 @@ Used for uploading notes for leetcode questions
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/54b86a8d-bf8d-4029-9467-a9df64b008c1">
 - O(log n ) time, we dont traverse both sides of the tree, only visit one half of tree, level by level (Traverse height of tree)
 
+## 8. Binary tree level order traversal
+- Facts: Dequeue is a double ended queue, allows popping and insertion from front and back
+- Given a binary tree, return a list for nodes in level order 
+- Solution : Use BFS traversal, on each level create a tempList and append that list once the level is fully traversed
+- Use a queue to insert nodes, pop from the left and add left and right children to the end of list
+- Intuition : Once a queue is empty (current len(queue) = 0), the nodes in that level is fully traversed
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/ba030921-916e-407a-8613-c734b0e0ffb8">
+- O(n) time
+
+
+
+
 
 
 
