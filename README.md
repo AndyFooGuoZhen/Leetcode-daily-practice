@@ -38,6 +38,19 @@ Used for uploading notes for leetcode questions
 - iterate list from reverse and append elements from sublist into result list until length of k is reached
 - O(n) time
 
+## 6. Product of array except itself
+- Given an array of integers , compute an answer array where each element is the product of arrray except itself
+- Catch : Must do it in O(n), can't use division
+- EX: Input : [2,3,4,5] , Output : [60, 40, 30, 24]
+- Solution : Use prefix and postfix, prefix : product of elements before curr element, postfix: product of elements after curr element
+- Do it in 2 pass, first iteration loop through array and compute prefix array
+- Second pass, loop through array in reverse order to compute postfix array
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f5743b84-1ff4-4a7f-9fe3-da75d375c847">
+- To save memory, it can be done directly on the output array
+- Note: prefix for 1st element is always 1, postfix for last element is always 1
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/03e99931-4b33-4dff-b176-b1e5ec070aff">
+- O(n) time, O(n) memory
+
 
 # Two pointers
 
