@@ -292,6 +292,13 @@ Used for uploading notes for leetcode questions
 - Just return last element of temp list before appending to result list
 - O(n) time
 
+## 10. Count good nodes in binary tree
+- Given the root of the binary tree, return the number of good nodes
+- Good nodes : Starting from the root to node X, there are no nodes greater than X
+- Solution: Use Dfs traversal, at each level if node is larger than maxVal, increment count and set new max = currNode.val
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/93c912b5-b677-4842-965e-dcedf7e275cd">
+- Runs in O(n) time
+
 
 
 
