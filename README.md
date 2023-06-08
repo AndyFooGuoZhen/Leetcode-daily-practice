@@ -299,6 +299,20 @@ Used for uploading notes for leetcode questions
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/93c912b5-b677-4842-965e-dcedf7e275cd">
 - Runs in O(n) time
 
+## 11. Validate binary search tree
+- Fact: Every node on the right of node of BST is larger that root, every node on the left smaller than root
+- Wrong intuition : Use BFS, at every level , check if node is less than parent if it's on the left and more than parent if it's on the right
+- Explanation: would miss out edge cases ( where node 4 is less than 7, but should be more than 5) 
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/343353ab-94dd-421b-9801-8240485661ec">
+- Solution: Use DFS, set left and right boundaries at each recursive traversal, check if node.val between left and right boundaries
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/1cd07cb3-9bf0-4461-b539-cccedd381c38">
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/6f60f8e5-2705-4ced-83bf-d4816edd48c6">
+- TIP : Use float("-inf") for negative infinity and florat("inf") for infinity
+
+
+
+
+
 
 
 
