@@ -74,6 +74,14 @@ Used for uploading notes for leetcode questions
 - O(n^2) time
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/6bfba150-64ee-4319-acc6-de62b1458db6">
 
+## 4. Container with most water
+- Given an array of heights, compute the max area that can be achieved by constructing a container using heights from array
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/4122a2a6-cac8-4d94-ba17-786207f47101">
+- Solution: Use 2 pointer solution, 1 pointer at beginning , 1 at the end
+- While leftPtr < rightPtr, compute area, if area is > than prev max, udpate max
+- Then, check if leftPtr >= rightPtr, if true, shift rightPtr to left, else shift leftPtr to right (maximizing heights)
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/06ef2557-c1fe-4c68-b63f-d6ad366d18d8">
+- Runs in O(n) time
 
 # Sliding windows
 
