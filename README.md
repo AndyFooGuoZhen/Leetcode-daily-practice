@@ -339,6 +339,26 @@ Used for uploading notes for leetcode questions
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/0c19d875-fcfe-4f71-b60a-bc7a4c41323f">
 - O(n) time
 
+# Tries
+Definition : Prefix tree used to store strings efficiently 
+
+## 1. Implement Trie
+- Goal : Implement insert, search and startswith operation
+- Why use a Trie instead of hashMap for string storage? Ans: Trie allows efficient searching for strings.
+- Concept, starting from the root node, if we were to insert a string "apple"
+- We check if the children of root has the node with letter "a", if so, traverse down the children of "a" node , else create node wth "a"
+- Blue nodes are marked as end nodes, used to tell if a word exists when using search operation
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/766df19b-4f30-475c-9c01-0ea31c0bc020">
+- If we need to insert the word "ape", we can reuse nodes instead of creating entirely new ones
+- If we use hashMap for startsWith, we may need to traverse the whole hashMap , giving O(n) time
+- But using Trie, we can traverse the beginning nodes to check for matching starting letters in O(26) == O(1) time
+- Solution : FIrst implement a Trie Node class that uses hashMap for tracking children and another property called end for marking end of the word
+- Then, implement insert function : Traversing letter by letter of input and starting from the root, if letter is in children of root, call children of the root, else create a TrieNode as value with key as the letter 
+- Search function, traverse from root, return False if letter no in children , else return TrieNode.end at the last letter
+- Startswith function, return False if letter no in children , else continue traversal until the end and return True
+- Search and startswith is very similar
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/7bc5861a-2593-4c38-90d8-ce7761efafe2">
+
 
 
 
