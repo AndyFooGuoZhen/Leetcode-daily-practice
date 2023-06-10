@@ -316,6 +316,7 @@ Used for uploading notes for leetcode questions
 ## 10. Count good nodes in binary tree
 - Given the root of the binary tree, return the number of good nodes
 - Good nodes : Starting from the root to node X, there are no nodes greater than X
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/9c6364db-df38-459d-837e-b22b6dee5896">
 - Solution: Use Dfs traversal, at each level if node is larger than maxVal, increment count and set new max = currNode.val
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/93c912b5-b677-4842-965e-dcedf7e275cd">
 - Runs in O(n) time
