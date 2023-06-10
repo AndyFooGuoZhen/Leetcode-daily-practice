@@ -330,6 +330,13 @@ Used for uploading notes for leetcode questions
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/6f60f8e5-2705-4ced-83bf-d4816edd48c6">
 - TIP : Use float("-inf") for negative infinity and florat("inf") for infinity
 
+## 12. Kth smallest element in BST
+- Given a binary tree, return the kth smallest element
+- Solution: Perform DFS with small tweaks
+- Only after the visiting the root, perform DFS on roto.left , then append the root to the array
+- This way, the nodes in the tree will be sorted
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/0c19d875-fcfe-4f71-b60a-bc7a4c41323f">
+- O(n) time
 
 
 
