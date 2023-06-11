@@ -415,6 +415,14 @@ Definition : Prefix tree used to store strings efficiently
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/7e648a0a-7796-4251-b10c-89998c208dde">
 - Runs in O(n) time
 
+## Kth largest element in an array
+- Given an array of integers, return the kth largest number
+- Note : Kth largest element does not mean the kth distinct solution
+- Solution : Use min heap implementation, only thing would be making sure no repeated numbers are in the minHeap (use a set instead)
+- <img width="518" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/fc958d89-6a40-4314-a230-93aaaec5f715">
+- Runs in O(n) time, with O(n) space complexity
+
+
 
 
 
