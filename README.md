@@ -106,6 +106,22 @@ Used for uploading notes for leetcode questions
 - calculate length of window and compare it to previous recorded max window length
 - O(n) time
 
+## 4. Permutation in string
+- Given strings s1 and s2, return True if s2 contains a permutation of s1
+- Example: s1 = "ab" , s2 = "cba", ans = true
+- Solution: If s1 is longer than s2, just return false
+- Use [0] and ord to keep track of letter count, set leftPtr = 0
+- Depending on len of s1, we will have sliding window of len s1 
+- After recording letter count for s1 and s2 (traversing len of s1), we slide the window of len(s1) to the right
+- At each iteration check if letter count array matches, if so, return true, else reduce letter count of s2 at leftPtr and increase letetr count at end of window, window always remain the side of len s1
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/a9fbe90b-2ee0-4cde-bbd7-bd26be817a5c">
+- Runs in O(26 * len(S2)) time
+- More optimal solution, instead of comparing two arrays via countS1 == countS2 everytime, use a match variable
+- In detail, if two arrays match, match = 26, if so , return true
+- Neetcode's approach updates the match variable everytime a new letter is added to the window
+- Resulting in O(26 + len(S2)) time
+
+
 # Stacks
 
 ## 1. Min stack
