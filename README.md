@@ -408,6 +408,13 @@ Definition : Prefix tree used to store strings efficiently
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/22c46e0b-603a-415e-b481-d3cfac4ecb89">
 - Runs in O(n) time
 
+## 3. K closest Points to origin
+- Given an array of coordinates, return the k closest points to origin
+- Solution : Use minheap to sort out the calculated distance for the points, and return k number of points
+- TIP : heapq.heapify works with 2d lists as well , EX: [[3,4,2],[2,4,3]] -> [[2,4,3],[3,4,2]]
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/7e648a0a-7796-4251-b10c-89998c208dde">
+- Runs in O(n) time
+
 
 
 
