@@ -399,6 +399,15 @@ Definition : Prefix tree used to store strings efficiently
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/44a21609-69b6-4c2e-8ed4-06f4f9600d02">
 - Note : Overall time complexity is O(n) due to heapify (build heap operation), popping from heap takes O(log n) with heapify
 
+## 2. Last stone weight
+- Given an array of stones with weight[i], for each turn smash two stones with the largest weights 
+- When smashed, resulting stone would have weight of X - Y
+- Solution : Use Max heap implementation
+- At each iteration ( while MaxHeap has more than 1 stone), smash two of the largest stones, get the reamining stone of weight x - y and add it back to the max heap
+- TIP: Use heapq.heapify method, but convert all weights in array to negative value (Since max heap implementation for heapq doesnt exists)
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/22c46e0b-603a-415e-b481-d3cfac4ecb89">
+- Runs in O(n) time
+
 
 
 
