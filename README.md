@@ -359,6 +359,13 @@ Definition : Prefix tree used to store strings efficiently
 - Search and startswith is very similar
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/7bc5861a-2593-4c38-90d8-ce7761efafe2">
 
+## 2. Design add and search words data structure
+- Similar to trie question, the only catch would be tweaked search algorithm
+- In a given string, "." would represent any string
+- In a trie, if "apple" exists, "..ple" would be a viable string and should return true
+- Solution for search, if a . is met, traverse all of it's children recursively to check if the string that matches the remaining portion after "." exists.
+- Code for adding == insert , base code essestially the same as Q1
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/e564cbcc-be5d-4624-b6c2-38c657445d70">
 
 
 
