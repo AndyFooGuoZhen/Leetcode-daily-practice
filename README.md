@@ -27,7 +27,8 @@ Used for uploading notes for leetcode questions
 - for each string, iterate through each character and use ord() to get ascii value of character, essentially we are coutning the number of a specific character for each string
 - convert the list into tuple form at the end, and add it to hashmap via append ( hashMap[tuple(count)].append(current string) ) 
 - m be no of strings, n be longest length of a string, time = O(mn)
-- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f4861c88-393d-4c73-8387-b82ef6e73da3">
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/5f56bf04-b514-4221-b710-80f512546684">
+
 
 
 ## 5. Top k frequent elements
