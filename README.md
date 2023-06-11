@@ -384,6 +384,21 @@ Definition : Prefix tree used to store strings efficiently
 - Code for adding == insert , base code essestially the same as Q1
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/e564cbcc-be5d-4624-b6c2-38c657445d70">
 
+# Heaps and priority queues
+
+## 1. Kth largest element in a stream
+- Build a class that returns the kth largest element of the input
+- The add operation would add element into the stream while returning the kth element into the stream
+- Example interaction : 
+- KthLargest kthLargest = new KthLargest(3, [4, 5, 8, 2]);
+- kthLargest.add(3);   // return 4
+- kthLargest.add(5);   // return 5
+- Slow solution : Sort the array in O(nlogn) time, return list[len(list) - k]
+- Better solution : Use min heap implementation
+- Build a heap of size k, add element and pop element while maintaining heap size of k, return heap[0] for kth largest element
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/44a21609-69b6-4c2e-8ed4-06f4f9600d02">
+- Note : Overall time complexity is O(n) due to heapify (build heap operation), popping from heap takes O(log n) with heapify
+
 
 
 
