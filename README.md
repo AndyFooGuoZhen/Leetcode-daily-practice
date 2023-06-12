@@ -426,12 +426,23 @@ Definition : Prefix tree used to store strings efficiently
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/7e648a0a-7796-4251-b10c-89998c208dde">
 - Runs in O(n) time
 
-## Kth largest element in an array
+## 4. Kth largest element in an array
 - Given an array of integers, return the kth largest number
 - Note : Kth largest element does not mean the kth distinct solution
 - Solution : Use min heap implementation, only thing would be making sure no repeated numbers are in the minHeap (use a set instead)
 - <img width="518" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/fc958d89-6a40-4314-a230-93aaaec5f715">
 - Runs in O(n) time, with O(n) space complexity
+
+## 5. Task scheduler
+- Given an array of characters where each character represent a task, an a nonnegative integer n that represents the minimum unit of wait time between the same tasks
+- Goal : Find the minimum unit of time needed to schedule all the tasks
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f0f5c880-8057-4994-905f-d5bfb50fa46b">
+- Explanation : After task A is completed , a minimum cycle of 2 units will need to be met in order for next task A to be performed again
+- Solution : Use a maxHeap implementaiton and queue, first count the occurence of each tasks, start with tasks with most occurence
+- Then, decrement remaining task , increment time , and append task with their next available time to a queue
+- If tasks in queue is ready, append it back to maxHeap
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f99bca20-ee51-44ed-994e-ede41585f0d1">
+- Runs in O(n) time
 
 
 
