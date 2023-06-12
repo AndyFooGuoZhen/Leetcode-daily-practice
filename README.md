@@ -96,6 +96,7 @@ Used for uploading notes for leetcode questions
 - Define a set and left ptr
 - Traverse the string by each character, if character not in set, calculate length by taking right ptr - left ptr + 1
 - if character in set, start removing characters from left ptr until character no longer in set
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/14de8489-509c-45fd-9d84-4e7efd5acb18">
 - O(n) time
 
 ## 3. Longest repeating character with replacement
@@ -104,6 +105,7 @@ Used for uploading notes for leetcode questions
 - then in a while loop, check if current window size - max count of a charcater in hashmap > k
 - if so, decrement count of character at left ptr in hashmap and move leftptr to the right
 - calculate length of window and compare it to previous recorded max window length
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/237af54a-645a-4442-a1b1-330d6bbfb7d3">
 - O(n) time
 
 ## 4. Permutation in string
@@ -137,6 +139,15 @@ Used for uploading notes for leetcode questions
 - Case 3; if close < open parenthesis, append close parenthesis to parenthesis string and recursively call method again ( make sure to pop, ensure close parenthesis is consistent)
 - Tip , use "".join(list) to convert elements in list to one string before appending it to result list
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/d9350b87-1844-4ddf-b979-6ce6070bd852">
+
+## 3. Daily temperatures
+- Given an array of temperatures, return an array containing the no of days needed to wait for increase
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/a6564c57-40f3-4c36-b4fe-c4b2301770fd">
+- Solution : Use a stack to keep track of temperatures and their index
+- Iterate throught the temperatures, if current temperature is > than tempereature on top of stack, update index for temperature on top of stack with diff in indices, continue doing so until current < temperature on top of stack or nothing in stack
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/da7ad668-41d1-4e33-90f5-c36ee7d17de2">
+- Runs in O(n) time
+
 
 
 # Binary search
