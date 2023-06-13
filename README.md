@@ -459,6 +459,15 @@ Definition : Prefix tree used to store strings efficiently
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f99bca20-ee51-44ed-994e-ede41585f0d1">
 - Runs in O(n) time
 
+# Backtracking
+
+## 1. Subsets
+- Given an array of numbers, generate all possible subsets
+- Solution : Use DFS and popping of stack
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/dfb48046-b106-45e5-8941-4128e6bd81f2">
+- At each level either add nums[i] and continue dfs, or remove nums[i] and continue dfs
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/05495dcb-f69d-4a5d-97e3-ecc5eb90aae7">
+
 
 
 
