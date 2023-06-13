@@ -474,6 +474,7 @@ TIP : something to do with incrementing at each level, no repeating inputs in re
 ## 2. Combination sum
 - Given an array of numbers, generate all combinations of numbers that sum to target
 - Solution : Use backtracking, at each level either add current number , or dont add other number
+- Example : [2,3,6,7], target = 7
 - <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f597151e-0d93-4a0a-abac-f1f5d1553acd">
 - At each level , append to result if sum == tartget, check if sum > target or i == len( input), if so, return, else continue dfs backtracking
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/ce09b67f-11e4-408a-87e1-f94faa1d958c">
