@@ -464,7 +464,7 @@ Definition : Prefix tree used to store strings efficiently
 ## 1. Subsets
 - Given an array of numbers, generate all possible subsets
 - Solution : Use DFS and popping of stack
-- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/dfb48046-b106-45e5-8941-4128e6bd81f2">
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/57dd016f-9af6-4890-b220-0f9f5b933c79">
 - At each level either add nums[i] and continue dfs, or remove nums[i] and continue dfs
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/05495dcb-f69d-4a5d-97e3-ecc5eb90aae7">
 
