@@ -462,6 +462,7 @@ Definition : Prefix tree used to store strings efficiently
 # Backtracking
 
 TIP : something to do with incrementing at each level, no repeating inputs in results
+Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End at i == len(of array) 
 
 ## 1. Subsets
 - Given an array of numbers, generate all possible subsets
