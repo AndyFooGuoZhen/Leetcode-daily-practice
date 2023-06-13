@@ -172,6 +172,21 @@ Used for uploading notes for leetcode questions
 - Else , high = mid -1
 - O(logn) time
 
+## Search in rotated sorted array
+- Suppose we have rotated sorted array : [4,5,6,7,0,1,2], we want to find the index of target in rotated sorted array
+- Solution : if mid doesnt match target, check if mid is in first sorted portion or second
+- First portion : nums[mid] >= nums[left]
+- Case 1a) if target is larger than nums[mid], target is at second portion
+- Case 1b) if target is smaller than nums[left], target is at second portion
+- Case 2) Else, target is in first portion
+- Second portion
+- Case 1a) if target is > nums[right], target is at first portion
+- Case 1b) if target is < nums[mid], target is at first portion
+- Else, target is in second portion
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/b6914422-d6e4-4d04-9ceb-8e1480d4e628">
+- Runs in O(logn) time
+
+
 # Linked List
 
 ## 1. Reversing Linked list
