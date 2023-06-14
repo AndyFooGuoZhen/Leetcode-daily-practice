@@ -480,6 +480,18 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - At each level , append to result if sum == tartget, check if sum > target or i == len( input), if so, return, else continue dfs backtracking
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/ce09b67f-11e4-408a-87e1-f94faa1d958c">
 
+## 3. Permutations
+- Given an array of distinct numbers, generate all possible permutations of the numbers
+- Solution : Use backtracking, at each level add number that has not been used before
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/3f33703d-8248-40c2-8c59-cf92fe8ad7ee">
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/7e8cda0b-f7ec-43af-bbbd-6f45079b9382">
+- More optimized solution with less memory, break down to smallest unit of permutation, then add it to the back of a larger usnit of permutation
+- Example for nums:[2,3]
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/ce4d3b82-8887-472b-b178-300a926dd9ef">
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f4b70847-e1f7-4405-91cf-b783b6de907b">
+
+
+
 
 
 
