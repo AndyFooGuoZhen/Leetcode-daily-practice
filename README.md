@@ -170,6 +170,7 @@ Used for uploading notes for leetcode questions
 - in while loop , compare min of prev min with nums[mid]
 - Use binary search with a tweak, if nums[mid] is > num[right], min is probably on the right, set low = mid + 1
 - Else , high = mid -1
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/6ac969d3-22dc-4863-9a4d-fb09767d8621">
 - O(logn) time
 
 ## Search in rotated sorted array
