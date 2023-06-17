@@ -206,6 +206,8 @@ Used for uploading notes for leetcode questions
 - Case 3: else if list2 not empty, append list2 to tail.next
 - return dummy.next
 - O(len(list1) + len(list2))
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/df22dd68-1f3a-4551-8b15-76188d4d5623">
+
 
 ## 3. Reorder list
 - Reorder the list such that the list would be of this order 
@@ -266,6 +268,8 @@ Used for uploading notes for leetcode questions
 - By extrapolating this result, d will decrease until d = 0
 - Slow pointer and fast pointer starts at the beginning, move slow pointer by 1 node at a time, fast pointer 2 nodes at a time
 - The slow and fast pointer will eventually meet if cycle exists
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/bc6cd73d-b9a8-4233-9192-f22ef8621e1f">
+
 
 
 ## 8. Duplicate number in linked list
@@ -378,7 +382,7 @@ Used for uploading notes for leetcode questions
 ## 12. Kth smallest element in BST
 - Given a binary tree, return the kth smallest element
 - Solution: Perform DFS with small tweaks
-- Only after the visiting the root, perform DFS on roto.left , then append the root to the array
+- Only after the visiting the root, perform DFS on root.left , then append the root to the array
 - This way, the nodes in the tree will be sorted
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/0c19d875-fcfe-4f71-b60a-bc7a4c41323f">
 - O(n) time
