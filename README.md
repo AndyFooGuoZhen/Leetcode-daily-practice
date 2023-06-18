@@ -503,7 +503,8 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - Solution: To prevent duplicates, after popping, check if i+1 is the same as i, if so, increment i until diff number is found
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/21e13e3c-3762-4208-8083-7c993192ce83">
 - Resulting solution would look like this for [1,2,2,3]
-- 
+- <img width="500" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/872c9e82-a29e-487c-9fe0-156d3707eae5">
+
 
 
 
