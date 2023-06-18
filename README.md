@@ -505,6 +505,12 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - Resulting solution would look like this for [1,2,2,3]
 - <img width="500" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/872c9e82-a29e-487c-9fe0-156d3707eae5">
 
+## 5. Combination Sum 2
+- Given an array of integers where some integers may be duplicated, generate a list of lists summing up to the target
+- NOTE: Each element in the input array can only be used once
+- Solution: Similar to combination sum 1, but each element can only be used once , so dfs(i, ....) is not possible, only used dfs(i+1)
+- To prevent duplicated solutions, perform while loop checking after popping, similar to the solution for subsets 2
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/a20dce01-e2a9-49dc-92bd-e712a528f841">
 
 
 
