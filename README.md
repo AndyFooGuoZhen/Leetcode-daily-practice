@@ -495,6 +495,17 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/ce4d3b82-8887-472b-b178-300a926dd9ef">
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f4b70847-e1f7-4405-91cf-b783b6de907b">
 
+## 4. Subsets 2
+- Given an array of integers, some of which may be duplicated, return all possible subsets without duplications
+- Same logic as before , the only catch would be to prevent duplications in subset generation
+- Issue with subset 1 implementation
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/a6751ef6-17d2-4874-87c1-d7ef58dcd2de">
+- Solution: To prevent duplicates, after popping, check if i+1 is the same as i, if so, increment i until diff number is found
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/21e13e3c-3762-4208-8083-7c993192ce83">
+- Resulting solution would look like this for [1,2,2,3]
+- 
+
+
 
 
 
