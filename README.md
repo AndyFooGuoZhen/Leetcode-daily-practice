@@ -516,6 +516,12 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/a20dce01-e2a9-49dc-92bd-e712a528f841">
 - Sorting takes O(nlogn) , but overtaken by backtracking operation that takes O(2^n) timed\
 
+## 6. Wordsearch
+- Given a board ( 2d array of alphabets), return true if word exists in the grid, else false
+- We can traverse the board either vertically of horizontally
+- Solution: Brute force / backtracking approach, visit and generate path that leads to the word
+- Construct a recursive dfs function that generate a path leading to our word
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/650ccf9b-f476-4a88-907c-9bbc12563161">
 
 
 
