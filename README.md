@@ -523,6 +523,16 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - Construct a recursive dfs function that generate a path leading to our word
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/650ccf9b-f476-4a88-907c-9bbc12563161">
 
+## 7. Palindrome partirioning
+- Given a string, generate all possible palindrome partitioning
+- <img width="300" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/86bfdffb-109e-48cc-8692-a9bf21b36f06">
+- Solution: Use backtracking coupled with a palindrome checking function
+- Graph visualization
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/be60ccfe-0b24-4c44-b2f6-a3c5a708956d">
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/0de7356a-cc12-456f-afd8-9bf6ce6d055f">
+
+
+
 
 
 
