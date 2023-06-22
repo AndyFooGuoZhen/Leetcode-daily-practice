@@ -531,6 +531,14 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/be60ccfe-0b24-4c44-b2f6-a3c5a708956d">
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/0de7356a-cc12-456f-afd8-9bf6ce6d055f">
 
+# Graphs
+
+## 1. Number of islands
+- Given a 2d matrix, find the number of islands, "1" represent land, and "0" is water
+- Goal: Find no of patches of "1"
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/31fc9e98-5707-42c8-a0e9-8881e47b167d">
+- Solution traverse each cell in 2d matrix, if cell is "1" and have not been visited yet, increment count by 1 , and perform bfs in all 4 directions of that cell
+- <img width="800" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/ad0b422a-218a-4190-b3dd-c7db2c1dd7d7">
 
 
 
