@@ -541,12 +541,13 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - <img width="800" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/ad0b422a-218a-4190-b3dd-c7db2c1dd7d7">
 
 ## 2. Clone Graph
-- Given a graph, return a deep copy of the graph
+- Given an undirected graph, return a deep copy of the graph
 - Solution: Traverse from the given node, if the given node is in hashMap, ignore, else assign a copy of the given node to hashmap
 - Then, traverse its neighbors, if the neighbor is in hashMap, append to currentNode's neighbors, else, perform dfs and append it to currentNode's neighbors
-- Solution visualizzed
-- <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/b5f96967-3a81-47c9-be9f-5940e719b53e">
+- Solution visualized
+-<img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/237af2ab-1ec3-4c62-8558-f175b008b649">
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/1c43ce87-3b28-4b18-a4db-7e2f1788e16c">
+- Runs in O(n) time
 
 
 
