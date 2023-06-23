@@ -545,7 +545,7 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - Solution: Traverse from the given node, if the given node is in hashMap, ignore, else assign a copy of the given node to hashmap
 - Then, traverse its neighbors, if the neighbor is in hashMap, append to currentNode's neighbors, else, perform dfs and append it to currentNode's neighbors
 - Solution visualized
--<img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/237af2ab-1ec3-4c62-8558-f175b008b649">
+- <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/237af2ab-1ec3-4c62-8558-f175b008b649">
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/1c43ce87-3b28-4b18-a4db-7e2f1788e16c">
 - Runs in O(n) time
 
