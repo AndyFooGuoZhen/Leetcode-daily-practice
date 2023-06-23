@@ -549,6 +549,13 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/1c43ce87-3b28-4b18-a4db-7e2f1788e16c">
 - Runs in O(n) time
 
+## 3. Max area of island
+- Given a 2d matrix, find the max area of islands, "1" represent land, and "0" is water
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/0c125b38-abac-42c1-abaf-e5358c0eb1fb">
+- Solution : Similar to finding no of islands, except we need to keep track of the max area
+- BFS solution shown below:
+- <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/c76aa822-ffda-42d0-a2be-3c54f3876cb2">
+
 
 
 
