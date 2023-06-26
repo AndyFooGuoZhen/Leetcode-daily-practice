@@ -555,6 +555,9 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - Solution : Similar to finding no of islands, except we need to keep track of the max area
 - BFS solution shown below:
 - <img width="800" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/c76aa822-ffda-42d0-a2be-3c54f3876cb2">
+- DFS solution uses less memory
+- <img width="800" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/5055faa2-f906-45b0-ae62-8bc324d78056">
+
 
 ## 4. Atlantic water flow
 - Given a 2d matrix, find the spots on the island that allows rainwater to fall to both the pacific and atlantic ocean
