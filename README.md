@@ -556,6 +556,17 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - BFS solution shown below:
 - <img width="800" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/c76aa822-ffda-42d0-a2be-3c54f3876cb2">
 
+## 4. Atlantic water flow
+- Given a 2d matrix, find the spots on the island that allows rainwater to fall to both the pacific and atlantic ocean
+- Brute force solution: Traverse each location, for each location traverse in four directions to check , takes O((M*N)^2) time
+- Better solution : Instead of looking at rain water at specific location, look from different perspective
+- Look if pacific / Atlantic water can "climb" that location if prevHeight is < next height, pacific water can "climb" to that location
+- Uses Dfs approach , runs in O(M*N) time
+- <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/9903b661-eedb-470a-9b85-2f87267fdf66">
+- Bfs solution works too, but is slower, consumes more memory
+- <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/1bed19b1-39eb-4016-99b7-f2ebe8e930b5">
+
+
 
 
 
