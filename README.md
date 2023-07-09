@@ -569,6 +569,14 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - Bfs solution works too, but is slower, consumes more memory
 - <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/1bed19b1-39eb-4016-99b7-f2ebe8e930b5">
 
+## 5. Surrounded regions
+- Given a 2d matrix, convert surrounded cells into X
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/87ab8f7f-01ac-4267-9e37-eeede0371795">
+- Wrong intuition: traverse each cell in matrix, if cell is 'O', check up down left right direction to see if there are any 'X'
+- Explanation, having 'X' in all four direction doesn't mean 'O' cell is surrounded by 'X'
+- Solution: Instead of capturing cells that are surrounded, find cells that are unsurrounded , mark them as different letter, and convert all remaining 'O' cells into 'X
+- 
+
 
 
 
