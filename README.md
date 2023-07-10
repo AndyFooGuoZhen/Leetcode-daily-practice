@@ -579,6 +579,19 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/51ae4ee5-ebee-4133-9acc-52697fb6b8c9">
 - Runs in O(M * N) time
 
+## 6. Rotting oranges
+- Given a m * n matrix, find the minimum amount of time such that all oranges in the grid are rotten
+- <img width="700" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/57562446-5afa-4a93-8744-fa5033daf1e3">
+- Solution : First find oranges that are rotten, perform bfs for each rotten orange simultaneously and add unrotten oranges into queue
+- Have a visited set to keep track of oranges that are visited
+- If there are unrotten oranges detected via bfs in 4 directions, convert them to rotten, add them to queue
+- After one cycle of bfs done, check if there are unrotten oranges in the queue, if so , increment time
+- <img width="800" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/06cad9f6-9785-41b4-b472-9241990c6cbb">
+- Runs in O(M * N) time
+
+
+
+
 
 
 
