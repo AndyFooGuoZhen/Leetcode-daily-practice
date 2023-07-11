@@ -589,6 +589,17 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - <img width="800" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/06cad9f6-9785-41b4-b472-9241990c6cbb">
 - Runs in O(M * N) time
 
+## 7. Walls and Gates
+- Given a m * n matrix, Conmpute minimum distance from gates to rooms
+- <img width="500" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/1ff98395-0e2c-45eb-8f6b-42047b892f68">
+- Soution : Similar to rotating oranges, first find all gates and append to queue, then perform bfs on all gates to rooms, computing the distances to all rooms
+- Use visited set to keep track of visited cells
+- <img width="850" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/78d9451b-b120-4a8c-9d57-269ab69ec618">
+- Runs in O(M * N) time
+
+
+
+
 
 
 
