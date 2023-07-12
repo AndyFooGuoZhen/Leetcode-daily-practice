@@ -608,6 +608,12 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - If node[course] = [], return True as the course doesnt have any prerequisite
 - <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/b27252e3-3dda-4731-b0cf-4484c7c96b20">
 
+## 9. Course Schedule 2
+- Similar to course schedule 1, but we return the order of courses if it is satisfiable, else we return []
+- Solution : Perform dfs on each node, use additional set to keep track of courses added to results
+- <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/89363646-b989-4f4b-839d-feb73558d7ac">
+- Runs in O(E + V) time
+
  
 
 
