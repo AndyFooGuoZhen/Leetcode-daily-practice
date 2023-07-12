@@ -597,6 +597,19 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - <img width="850" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/78d9451b-b120-4a8c-9d57-269ab69ec618">
 - Runs in O(M * N) time
 
+## 8. Course Schedule
+- Given a 2D array, return True if the course schedule is satisfiable
+- <img width="300" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/c48e678e-1386-451a-8b29-0f0b6ea5d257">
+- <img width="300" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/10fdbf5a-dec0-4be3-9b1d-7e07cc7fa916">
+- Suppose we have this example courses = [[0,1], [0,2], [1,3], [1,4], [3,4]]
+- Solution: Build a hashmap for each courses with their prerequisites (linked list representation), use dfs to traverse each course, return False if there are cycles detected, else return True
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/c41cf287-ef1b-42cd-8fe0-21b3172fa91c">
+- TIP : Use visited set to keep track of current node, used for detecting cycles
+- If node[course] = [], return True as the course doesnt have any prerequisite
+- <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/b27252e3-3dda-4731-b0cf-4484c7c96b20">
+
+ 
+
 
 
 
