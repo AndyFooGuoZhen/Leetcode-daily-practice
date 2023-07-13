@@ -624,6 +624,27 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/b2c4432e-6278-4738-af17-a385ca46085c">
 
 
+# 1D dynamic programming
+Solving subproblems
+  
+## 1. Climbing Stairs
+-Given n number of stairs , we can take either 1 or 2 step at a time, return the number of possible ways to climb to the top of the stairs
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/b078a854-a33c-41f8-a15e-360d3530e0b1">
+- Brute force solution : Use dfs , count no of possible solutions
+- Suppose we have n = 5,
+- <img width="900" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/2b9ca534-b2d5-490e-893e-d320ea54d30e">
+- More efficient solution : Since the subproblems have been solved, we can use some form of cache to store solutions to our subproblems (Memoization), resulting in O(n) solution
+- <img width="900" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/75522cd5-e7e2-4ac2-8d5b-005bedbbd673">
+- Alternative solution, use bottom-up approach, produce solutions starting from n = 5
+- <img width="700" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/a02abf1a-40bd-44a3-a078-2ae17b2f2c97">
+- <img width="300" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/1b40d703-9c77-4067-a17c-25fc033049aa">
+
+
+
+
+
+
+
 
  
 
