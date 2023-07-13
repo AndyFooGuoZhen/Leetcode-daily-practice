@@ -628,7 +628,7 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 Solving subproblems
   
 ## 1. Climbing Stairs
--Given n number of stairs , we can take either 1 or 2 step at a time, return the number of possible ways to climb to the top of the stairs
+- Given n number of stairs , we can take either 1 or 2 step at a time, return the number of possible ways to climb to the top of the stairs
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/b078a854-a33c-41f8-a15e-360d3530e0b1">
 - Brute force solution : Use dfs , count no of possible solutions
 - Suppose we have n = 5,
