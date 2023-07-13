@@ -614,6 +614,17 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/89363646-b989-4f4b-839d-feb73558d7ac">
 - Runs in O(E + V) time
 
+## 10. Redundant Connection
+- Given a 2d array of edges, remove an edge such that cycle in a graph no longer exists.
+- <img width="450" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/bd45df22-b2a5-4456-9d98-13c6384792ed">
+- Solution : Union Find
+- For each node n, we associate a rank (no of nodes in graph containing node n) and a parent array, a node's parent is itself initially
+- As we traverse through the edges, we check if we can Union/join the two nodes, if the two nodes have the same parent, return false, else, check whose rank is higher and add the node to the graph with higher rank
+- <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/bc276ecd-0cf0-43bf-b1db-ef9b6b762f11">
+- <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/b2c4432e-6278-4738-af17-a385ca46085c">
+
+
+
  
 
 
