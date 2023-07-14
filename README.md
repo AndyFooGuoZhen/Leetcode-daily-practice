@@ -638,6 +638,16 @@ Solving subproblems
 - Alternative solution, use bottom-up approach, produce solutions starting from n = 5
 - <img width="700" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/a02abf1a-40bd-44a3-a078-2ae17b2f2c97">
 - <img width="300" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/1b40d703-9c77-4067-a17c-25fc033049aa">
+- Runs in O(n) time
+
+## 2. Min Cost Climbing Stairs
+- Given an array of costs where cost[i] indicates the cost to climb stair at level i, return min cost to climb to top of stairs
+- Users can start climbing from index 0 or 1, and they can take 1 or 2 steps per time
+- Solution : Dynamic programming solution involving the use of min comparison
+- <img width="450" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/009314fc-929a-4a8c-86b0-f1ed1679366a">
+- Runs in O(n) time
+
+
 
 
 
