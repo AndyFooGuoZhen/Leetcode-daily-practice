@@ -647,6 +647,14 @@ Solving subproblems
 - <img width="450" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/009314fc-929a-4a8c-86b0-f1ed1679366a">
 - Runs in O(n) time
 
+## 3. House Robber
+- Given an array of numbers, return max robbed amount given that no two adjacent houses can be robbed
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/1047e9aa-1eea-48c2-b7f3-b7c670cada84">
+- Solution : keep track of currMax and max before prev element
+- <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/6037be3d-0b48-4afa-aa54-b3be54407902">
+- Runs in O(n) time
+
+
 
 
 
