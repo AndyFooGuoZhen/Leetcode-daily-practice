@@ -654,6 +654,13 @@ Solving subproblems
 - <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/6037be3d-0b48-4afa-aa54-b3be54407902">
 - Runs in O(n) time
 
+## 4. House Robber 2
+- Similar to house robber 1, except the array is circular (first element is adjacent to the last)
+- Solution: Perform house robber algorithm from 1st to last -1 and from 2nd to last element , then compare and return the larger element
+- <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/fa31c22d-9f22-4cf7-af40-56710c3a76ac">
+- Runs in O(n) time
+
+
 
 
 
