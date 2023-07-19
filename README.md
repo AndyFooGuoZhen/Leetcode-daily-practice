@@ -665,7 +665,7 @@ Solving subproblems
 - Bruteforce solution, for each character i, traverse the string from character i and build longest palindromic substring
 - Run time : For each character O(n) * traverse the string from character O(n) * check if it's palindrome O(n) = O(n^3)
 - Better solution, for each character, expands outwards in left and right direction, if char[left] == char[right], record as a palindrome
-- <img width="500" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f68a56c6-c6c4-44e0-8c92-09f9d730cc48">
+- <img width="500" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/213b39ec-4667-47bd-bae3-c33f5124f67d">
 - Runs in O(n^2) time
 
 
