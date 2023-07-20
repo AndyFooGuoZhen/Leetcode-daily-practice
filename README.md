@@ -668,6 +668,13 @@ Solving subproblems
 - <img width="500" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/213b39ec-4667-47bd-bae3-c33f5124f67d">
 - Runs in O(n^2) time
 
+## 6. Palindromic substrings
+- Given a string, return the count of palindromic substrings that can be formed
+- Brute force solution : Create a isPalindrome helper , iterate through every letter in every possible combination O(n^3)
+- Solution : Use tweaked solution from longest palindrome substring, increment count when a palindrome condition is satisfied
+- <img width="500" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f719fc02-2e2b-4c2b-8849-369f0f6c32d8">
+- Runs in O(n^2) time
+ 
 
 
 
