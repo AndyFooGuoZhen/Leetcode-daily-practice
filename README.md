@@ -682,6 +682,7 @@ Solving subproblems
  - Solution : For each letter[i], compute ways to encode letters starting from letters[i+1], if letters[i] and letters[i+1] can be encoded, add ways to compute letters[i+2] as well
  - Use cache for dp to reduce time complexity (memoization)
  - <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/5d0a9a86-c5da-4a52-935a-5ff14a40deab">
+ - <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/4bf995b6-2f79-46c3-a19d-006e0a9aff92">
  - Runs in O(n) time
 
 
