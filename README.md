@@ -686,6 +686,15 @@ Solving subproblems
  - <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/4bf995b6-2f79-46c3-a19d-006e0a9aff92">
  - Runs in O(n) time
 
+## 8. Coin Change
+- Given an array of coins, return the least no of coins needed to reach the targeted sum (amount)
+- Brute force solution, try out each possible combination until sum is reached
+- <img width="500" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/7467876a-93d4-4d66-a2ce-c6132d12c902">
+- Better solution : Use bottom up approach + caching , at dp level i, store the min number of coins needed to sum to i
+- <img width="700" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/3f34c354-f0bd-472f-b6d8-dd1a34d2d7c7">
+- Runs in O( amount * len(input))
+
+
 
 
 
