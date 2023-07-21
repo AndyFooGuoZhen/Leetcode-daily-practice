@@ -652,6 +652,7 @@ Solving subproblems
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/1047e9aa-1eea-48c2-b7f3-b7c670cada84">
 - Solution : keep track of currMax and max before prev element
 - <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/6037be3d-0b48-4afa-aa54-b3be54407902">
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/41fbb697-1fde-4a85-a994-48dd3035669f">
 - Runs in O(n) time
 
 ## 4. House Robber 2
