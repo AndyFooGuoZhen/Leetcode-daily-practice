@@ -670,11 +670,21 @@ Solving subproblems
 
 ## 6. Palindromic substrings
 - Given a string, return the count of palindromic substrings that can be formed
-- Brute force solution : Create a isPalindrome helper , iterate through every letter in every possible combination O(n^3)
-- Solution : Use tweaked solution from longest palindrome substring, increment count when a palindrome condition is satisfied
+- Brute force solution: Create an isPalindrome helper, iterate through every letter in every possible combination O(n^3)
+- Solution : Use tweaked solution from the longest palindrome substring, increment count when a palindrome condition is satisfied
 - <img width="500" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f719fc02-2e2b-4c2b-8849-369f0f6c32d8">
 - Runs in O(n^2) time
- 
+
+ ## 7. Decode ways
+ - Given a string, return the number of possible ways to decode the string
+ - Let A -> 1, B -> 2 ..... Z -> 26
+ - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/90113c8c-de7a-469b-b512-16464c0da109">
+ - Solution : For each letter[i], compute ways to encode letters starting from letters[i+1], if letters[i] and letters[i+1] can be encoded, add ways to compute letters[i+2] as well
+ - Use cache for dp to reduce time complexity (memoization)
+ - <img width="600" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/5d0a9a86-c5da-4a52-935a-5ff14a40deab">
+ - Runs in O(n) time
+
+
 
 
 
