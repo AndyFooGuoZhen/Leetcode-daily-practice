@@ -692,6 +692,7 @@ Solving subproblems
 - <img width="500" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/7467876a-93d4-4d66-a2ce-c6132d12c902">
 - Better solution : Use bottom up approach + caching , at dp level i, store the min number of coins needed to sum to i
 - <img width="700" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/3f34c354-f0bd-472f-b6d8-dd1a34d2d7c7">
+- <img width="500" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/71e747c3-a3b4-494e-bbc4-8e4e2bba5f49">
 - Runs in O( amount * len(input))
 
 
