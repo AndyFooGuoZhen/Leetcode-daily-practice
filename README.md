@@ -66,7 +66,7 @@ Used for uploading notes for leetcode questions
 - if i > j, return false, else return [i,j]
 - O(n) time
 
-## 3. Three Sum
+## 3. Three Sum *****
 - Start by sorting the num list O(nlogn)
 - iterate through the list, for each iteration check if current is same as previous, if its the same , use continue to go to next number in list,
 - declare left and right pointer, left pointing at current index + 1, right pointing at last number
@@ -108,7 +108,7 @@ Used for uploading notes for leetcode questions
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/237af54a-645a-4442-a1b1-330d6bbfb7d3">
 - O(n) time
 
-## 4. Permutation in string
+## 4. Permutation in string *****
 - Given strings s1 and s2, return True if s2 contains a permutation of s1
 - Example: s1 = "ab" , s2 = "cba", ans = true
 - Solution: If s1 is longer than s2, just return false
@@ -173,7 +173,7 @@ Used for uploading notes for leetcode questions
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/6ac969d3-22dc-4863-9a4d-fb09767d8621">
 - O(logn) time
 
-## Search in rotated sorted array
+## Search in rotated sorted array *****
 - Suppose we have rotated sorted array : [4,5,6,7,0,1,2], we want to find the index of target in rotated sorted array
 - Solution : if mid doesnt match target, check if mid is in first sorted portion or second
 - First portion : nums[mid] >= nums[left]
