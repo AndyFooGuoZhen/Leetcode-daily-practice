@@ -209,7 +209,7 @@ Used for uploading notes for leetcode questions
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/df22dd68-1f3a-4551-8b15-76188d4d5623">
 
 
-## 3. Reorder list
+## 3. Reorder list *****
 - Reorder the list such that the list would be of this order 
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/f5ee3d24-346e-455a-88d4-3cf872b222f0">
 - Intuition: Break linked list in half, reverse second half of linked list, begin merging both lists by alternating between the 2 halfs
