@@ -305,6 +305,7 @@ Used for uploading notes for leetcode questions
 - Given a tree, find the longest diameter of the tree (max length of path from one node to other node)
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/438aeb72-8b2d-43df-9118-f0a8e2ea9fef">
 - Tree above has diameter of tree
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/ab13a694-80c9-45d3-8f7f-d7361bf9e1eb">
 - Basics for tree : Height = starting from bottom , the node with the highest depth has height of 0 ; null nodes have height of -1
 - Solution intuition : Have a max variable, traverse tree from leaf nodes, height of the node = 1 + max(height(left), height(right)), update max if needed
 - Diameter = height(left) + height(right) + 2 , we need to add 2 as we the current node's height is one level above the left and right children 
