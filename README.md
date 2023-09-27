@@ -215,6 +215,7 @@ Used for uploading notes for leetcode questions
 - Intuition: Break linked list in half, reverse second half of linked list, begin merging both lists by alternating between the 2 halfs
 - Break problem into 2 portions : 1) find halfway point of the linkedlist 2) Begin merging process
 - 1) use fast and slow pointer to determine half of the linked list
+- Reminder : Set slow.next to None after getting the secondhalf to cut the original linked list into half 
 - 2) Reverse second half of list, same method as Q1 from linked list question above
 - 3) Merge both list via altering ( Use 2 temp variables to record next of head and next of reversed second list)
 
