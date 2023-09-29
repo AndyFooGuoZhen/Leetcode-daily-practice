@@ -531,6 +531,7 @@ Patterns : Uses dfs recursion, either increment i or not in recursion dfs(), End
 - Given a string, generate all possible palindrome partitioning
 - <img width="300" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/86bfdffb-109e-48cc-8692-a9bf21b36f06">
 - Solution: Use backtracking coupled with a palindrome checking function
+- Explanation : Bruteforcing method / backtracking method works by iterating through all possible combinations of the string
 - Graph visualization
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/be60ccfe-0b24-4c44-b2f6-a3c5a708956d">
 - <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/Leetcode-daily-practice/assets/77149531/0de7356a-cc12-456f-afd8-9bf6ce6d055f">
